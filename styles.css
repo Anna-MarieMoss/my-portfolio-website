@@ -492,3 +492,71 @@ a.btn:active {
 .service:hover span {
   color: #fff;
 }
+
+/* Skills */
+.skills-box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.skills-box h4 {
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.skills-box .skills-ilt {
+  width: 100%;
+  position: relative;
+  height: 0.4rem;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+}
+/* sets the skill level along the progress bar in yellow */
+.skills-box .skills-bar {
+  background-color: #dd9a05;
+  height: 0.4rem;
+}
+/* sets how far along the bar to colour */
+.skills-box .html {
+  width: 85%;
+}
+.skills-box .css {
+  width: 50%;
+}
+.skills-box .javascript {
+  width: 65%;
+}
+.skills-box .react {
+  width: 70%;
+}
+.skills-box .nodejs {
+  width: 65%;
+}
+.skills-box .sql {
+  width: 70%;
+}
+
+/* positions the ratings at the end of the skills bar */
+.skills-box span {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  font-size: 1.4rem;
+}
+
+/* splits the skill grid into 2 parts */
+.skills-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.key {
+  color: #dd9a05;
+  font-style: italic;
+}
+
+.key-words {
+  color: #888;
+  font-style: italic;
+}
