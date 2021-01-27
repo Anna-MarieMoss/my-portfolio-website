@@ -243,3 +243,67 @@ li {
   color: #dd9a05;
   text-decoration: underline;
 }
+
+.hero a:link,
+.hero a:visited {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #dd9a05;
+  background-color: #dd9a05;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+}
+
+.hero a:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 996px) {
+  .hero {
+    transform: translate(10%, -50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* this makes the into block texk jump up to the top 35% of the screen which in turn puts it above the main page image when viewing on a small screen */
+@media only screen and (max-width: 567px) {
+  .hero {
+    top: 35%;
+  }
+  /* reduces the font sizes for a mobile screen */
+  .hero h3 {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h4 {
+    font-size: 1.6rem;
+  }
+}
+
+/* external links to github etc */
+.icons {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  color: #fff;
+}
+/* spacing the external link icons */
+.icons span:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.icons span {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
