@@ -22,6 +22,17 @@ navClose.addEventListener('click', () => {
   }
 });
 
+// Fix nav bar
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener('scroll', () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add('fix-nav');
+  } else {
+    navBar.classList.remove('fix-nav');
+  }
+});
+
 // animated job roles text for the hero intro block
 new TypeIt('#type1', {
   speed: 120,

@@ -98,6 +98,16 @@ li {
   color: #fff;
 }
 
+.nav.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #dd9a05;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
 .top-nav {
   display: none;
 }
@@ -415,7 +425,7 @@ a.btn:active {
 
   .left img {
     height: 40rem;
-    max-width: 30rem;
+    max-width: 25rem;
   }
 }
 
@@ -423,5 +433,14 @@ a.btn:active {
   .about-center {
     grid-template-columns: 1fr;
     grid-area: 3rem 0;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left img {
+    height: 40rem;
+    max-width: 90%;
   }
 }
