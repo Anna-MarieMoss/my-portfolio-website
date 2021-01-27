@@ -89,3 +89,26 @@ gsap.from('.icons span', {
   x: -30,
   stagger: 0.2,
 }); //ripples in from left
+
+// Glidejs
+const glide = document.querySelector('.glide');
+
+if (glide)
+  new Glide(glide, {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    gap: 30,
+    hoverpause: true,
+    // autoplay: 2000,
+    animationDuration: 800,
+    animationTimingFunction: 'ease-in-out',
+    breakpoints: {
+      996: {
+        perView: 2,
+      },
+      768: {
+        perView: 1,
+      },
+    },
+  }).mount();
