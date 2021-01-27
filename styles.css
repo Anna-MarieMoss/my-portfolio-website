@@ -307,3 +307,121 @@ li {
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
+
+.icons span:hover {
+  color: #dd9a05;
+}
+
+@media only screen and (max-width: 567px) {
+  .icons {
+    display: none;
+  }
+}
+
+/* "About Me" styling */
+.section {
+  padding: 5rem 0 7rem 0;
+  overflow-x: hidden;
+}
+
+.about {
+  margin-top: 5rem;
+}
+
+.title {
+  margin: 4rem 0 7rem 0;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+/* adding colored underline of the "About Me" title */
+.title h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: #dd9a05;
+  width: 50%;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+/* positions the text to the side of the image with gap in between */
+.about-center {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem 5rem;
+}
+
+.left img {
+  height: 40rem;
+  max-width: 35rem;
+  object-fit: cover;
+  border-radius: 0.7rem;
+}
+
+.right h1 {
+  margin-bottom: 2rem;
+}
+
+.right p {
+  line-height: 2;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.right h1 span {
+  color: #dd9a05;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #dd9a05;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 2px solid #dd9a05;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-out;
+}
+
+a.btn:hover {
+  transform: translateY(-3px);
+}
+
+a.btn:active {
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 996px) {
+  .right h1 {
+    font-size: 2rem;
+  }
+
+  .right p {
+    font-size: 1.5rem;
+  }
+
+  a.btn {
+    padding: 0.7rem 1.8rem;
+  }
+
+  .left img {
+    height: 40rem;
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-center {
+    grid-template-columns: 1fr;
+    grid-area: 3rem 0;
+  }
+}
