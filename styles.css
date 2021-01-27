@@ -18,6 +18,7 @@ body {
   background-color: #fff;
   color: #000;
   position: relative;
+  z-index: 0;
 }
 
 h1,
@@ -89,4 +90,156 @@ li {
   .header img {
     width: 35rem;
   }
+}
+
+.nav {
+  /* 1.6rem responsive padding for nav bar so that it isn't too close to the top of the screen */
+  padding: 1.6rem 0;
+  color: #fff;
+}
+
+.top-nav {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  /* space-between but the items at the opposite side of the page from each other */
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.logo h1 span {
+  font-weight: bold;
+  color: #dd9a05;
+}
+
+.nav-list {
+  display: flex;
+  align-content: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  padding: 0.8rem 1rem;
+  transition: all 300ms ease-in-out;
+}
+.nav-link:hover {
+  border-radius: 0.3rem;
+  background-color: #dd9a05;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* setting how the website will look on a tablet size device */
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    max-width: 40rem;
+    background-color: #fff;
+    transition: all 500ms ease-in-out;
+    /* z-index changes the stacking order when viewing on a small screen size */
+    z-index: 100;
+  }
+
+  .menu.show {
+    left: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dd9a05;
+    padding: 1rem 1.6rem;
+  }
+  /* changes the dot to white so that it can be seen on the yellow background */
+  .top-nav .logo span {
+    color: #fff;
+  }
+
+  .top-nav .close {
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: block;
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    display: block;
+    font-size: 1.7rem;
+    color: #222;
+    padding: 1rem 0;
+  }
+
+  /* moves nav links from horizontal to a column */
+  .nav-list {
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 1.6rem;
+  }
+
+  body.show::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+
+  .nav.show {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* positioning of intro block */
+.hero {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
+  color: #fff;
+}
+
+.hero h3 {
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.hero h4 {
+  font-size: 2rem;
+}
+
+.hero h4 span {
+  color: #dd9a05;
+  text-decoration: underline;
 }

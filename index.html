@@ -30,8 +30,66 @@
   <body>
       <!-- type header.header#home to make a header with the class header and the id of home -->
      <header class="header" id="home">
+         <!-- Navigation - type in nav.nav -->
+         <nav class="nav">
+            <!-- Navigation - type in .navigation.container -->
+            <div class="navigation container">
+                <!-- Navigation - type in .logo -->
+                <div class="logo">
+                    <h1>Software Developer <span>.</span></h1>
+                </div>
+                <div class="menu">
+                    <div class="top-nav">
+                        <div class="logo">
+                            <h1>Software Developer <span>.</span></h1>
+                        </div>
+
+                        <div class="close">
+                            <!-- x is from fontawesome - icon called "times" -->
+                            <i class="fas fa-times"></i> 
+                        </div>
+                    </div>
+
+                    <ul class="nav-list">
+                        <!-- setting up navigation bar links -->
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#teams" class="nav-link">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="hamburger">
+                    <!-- fontawesome - icon "bars" gives us the 3 line navigation icon -->
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
+        </nav>
      <!-- homepage main image -->
-     <img class="banner" src="./images/anna-tartan-halfbody.jpg" alt="">
+     <img class="banner" src="./images/headshot_napa.png" alt="">
+
+     <!-- Hero??? - intro block with animated job title changes -->
+     <div class="hero">
+         <h3>Hello, my name is</h3>
+         <h1>Anna-Marie Moss</h1>
+         <h4>And I'm a <span id="type1"></span></h4>
+         <a href="#">Hire me</a>
+     </div>
     </header>
     <!-- Animate on scroll js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
