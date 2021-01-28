@@ -578,4 +578,47 @@ a.btn:active {
 /* Portfolio */
 .portfolio {
   color: #fff;
+  background-color: #111;
+  padding: 3rem;
+  text-align: justify;
+  border-radius: 1rem;
+  border-bottom: 4px solid transparent;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .img-cover {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 3px solid #dd9a05;
+  height: 13rem;
+  width: 17rem;
+  margin: 0 auto;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .img-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio h3 {
+  font-size: 1.6rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.portfolio p {
+  font-size: 1.5rem;
+  color: #ccc;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+.portfolio:hover {
+  border-bottom: 4px solid #fff;
+  background-color: #dd9a05;
+}
+
+.portfolio:hover .img-cover {
+  border-color: #fff;
 }

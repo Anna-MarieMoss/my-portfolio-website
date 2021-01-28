@@ -100,7 +100,7 @@ if (glide)
     perView: 3,
     gap: 30,
     hoverpause: true,
-    // autoplay: 2000,
+    autoplay: 2000,
     animationDuration: 800,
     animationTimingFunction: 'ease-in-out',
     breakpoints: {
