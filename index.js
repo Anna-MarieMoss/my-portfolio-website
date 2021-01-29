@@ -33,6 +33,28 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Scroll to
+const links = [...document.querySelectorAll('.scroll-link')];
+
+links.map((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const id = e.target.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    let position = el.offsetTop - navHeight;
+
+    window.scrollTo({
+      top: position,
+      left: 0,
+    });
+
+    navBar.classList.remove('show');
+    menu.classList.remove('show');
+    document.body.classList.remove('show');
+  });
+});
+
 // animated job roles text for the hero intro block
 new TypeIt('#type1', {
   speed: 120,
@@ -50,6 +72,7 @@ new TypeIt('#type1', {
   .delete(9)
   .go();
 
+// typeit - A lightweight, easy-to-implement jQuery animated typing plugin that types text for you.
 // animated job roles text for "About me" page
 new TypeIt('#type2', {
   speed: 120,
@@ -112,3 +135,20 @@ if (glide)
       },
     },
   }).mount();
+
+// links to image on about us section and calls the transition to slide right
+AOS.init();
+
+{
+  /* Note that the following have been placed at the bottom of the html file. They are the following..
+  AOS - animation on scroll
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"> </script>
+Glidejs - animated carousel and sliders
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+Typeit - animated typing
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+GSAP - javascript animation
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+My javascript file to control animations.
+    <script src="./index.js"></script> */
+}

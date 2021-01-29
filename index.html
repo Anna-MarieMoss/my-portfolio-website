@@ -53,22 +53,22 @@
                     <ul class="nav-list">
                         <!-- setting up navigation bar links -->
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
+                            <a href="#home" class="nav-link" scroll-link>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
+                            <a href="#about" class="nav-link" scroll-link>About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
+                            <a href="#services" class="nav-link" scroll-link>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link">Skills</a>
+                            <a href="#skills" class="nav-link" scroll-link>Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                            <a href="#portfolio" class="nav-link" scroll-link>Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
+                            <a href="#contact" class="nav-link" scroll-link>Contact</a>
                         </li>
                     </ul>
                 </div>  
@@ -88,16 +88,16 @@
          <h3>Hello, my name is</h3>
          <h1>Anna-Marie Moss</h1>
          <h4>And I'm a <span id="type1"></span></h4>
-         <a href="#">Hire me</a>
+         <a href="#contact">Hire me</a>
      </div>
 
      <!-- icons - adding in links to github, linkedIn, social media etc -->
      <div class="icons">
          <!-- github link -->
-         <span><i class="fab fa-github"></i></span>
+         <span><a class="external-links" href="https://github.com/Anna-MarieMoss" target="_blank"><i class="fab fa-github"></i></a></span>
          <!-- linkedIn link -->
-         <span><i class="fab fa-linkedin"></i></span>
-         <span><i class="fab fa-facebook"></i></span>
+         <span><a class="external-links"  href="https://www.linkedin.com/in/anna-marie-moss/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+         <span><a class="external-links"  href="https://www.facebook.com/annamarie.brown.988" target="_blank"><i class="fab fa-facebook"></i></a></span>
      </div>
     </header>
 
@@ -110,39 +110,41 @@
             </div>
 
             <div class="about-center container">
-               <div class="left">
+                <!-- AOS CSS 'on scroll' animation library - https://css-tricks.com/aos-css-driven-scroll-animation-library/ -->
+               <div class="left" data-aos="fade-right" data-aos-duration="2000">
                    <img src="./images/anna_paris_arch.jpg" alt="" class="src">
                </div> 
-               <div class="right">
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
                    <h1>I'm Anna-Marie a <span id="type2"></span></h1>
                    <p>After taking time out of my career to have children, eager for a new challenge and with a constant desire to upskill and grow, I decided to take the plunge and launch into the world of computer programming. I have gained skills and experience in full stack development, keeping the client at the heart of everything I do. With previous experience in HR, project management and as a business owner, I can adapt to any given situation and work in partnership with my clients to ensure their needs are met.</p>
-                   <a href="#" class="btn">Download CV</a>
+                   <!-- Download CV as a pdf -->
+                   <a href="./pdf_files/Anna-Marie Moss CV(v1-2021).pdf" target="_blank" class="btn">Download CV</a>
                </div>
             </div>
         </section>
 
-        <!-- sevices section -->
+        <!-- services section -->
         <section class="section theme" id="services">
             <div class="title">
                 <h1>My Services</h1>
             </div>
 
             <div class="services-center container">
-                <div class="service">
+                <div class="service" data-aos="fade-down" data-aos-duration="2000">
                     <span> <i class="fas fa-palette"></i><i class="fas fa-paint-brush"></i></span>
                     <h2>Design</h2>
                     <p>
                         List all of the services that you provide
                     </p>
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-up" data-aos-duration="2000">
                     <span><i class="fas fa-file-code"></i> </span><span> <i class="fas fa-database"></i></span>
                     <h2>Development</h2>
                     <p>
                         List all of the services that you provide
                     </p>
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-down" data-aos-duration="2000">
                     <span><i class="fas fa-cloud"></i><span>  </span><i class="fas fa-users"></i></span>
                     <h2>Deployment</h2>
                     <p>
@@ -159,7 +161,7 @@
             </div>
 
             <div class="skills-center container">
-                <div class="skills-left">
+                <div class="skills-left" data-aos="fade-right" data-aos-duration="2000">
                     <div class="skills-box">
                         <h4>HTML5</h4>
                         <div class="skills-ilt">
@@ -204,10 +206,10 @@
                     </div>
                     <h5 class="key">key - <span class="key-words">none, novice, proficient, expert</span></h5>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left" data-aos-duration="2000">
                     <h3>My creative skills and experience</h3>
                     <p> Add in an overview of your skill set including agile project management etc, etc...</p>
-                    <a href="#" class="btn">Read more</a>
+                    <a href="./pdf_files/Anna-Marie Moss CV(v1-2021).pdf" target="_blank" class="btn">Read more</a>
                 </div>
             </div>
         </section>
@@ -236,8 +238,8 @@
                             <p>Tech Stack & Planning Tools - React, CSS, JavaScript (ES6), Netlify, Node.js, PostgreSQL, Moments, Heroku,
                             Trello, Draw.io, Google docs.</p>
                             <p>Team & Project Duration – 4 developers for 1 week.</p>
-                            <p>GitHub - Frontend-repo, Backend-repo.
-                            </p>
+                            <!-- <p>GitHub -<a href="https://github.com/Anna-MarieMoss/front-end-wk8-project-week-zoom-united" target="_blank"> Frontend-repo</a>, <a href="https://github.com/Anna-MarieMoss/back-end-wk8-project-week-zoom-united" target="_blank">Backend-repo</a>.
+                            </p> -->
                         </div>
                     </li>
                     <li class="glide__slide">
@@ -256,7 +258,7 @@
                                 UI, Node.js, PostgreSQL, Jest, Heroku, Trello, Draw.io, Google docs, Figma and Jira.
                                 
                                 </p><p>Team & Project Duration – 6 developers for 4 weeks.</p>
-                            <p>GitHub - Frontend-repo, Backend-repo.
+                            <!-- <p>GitHub - Frontend-repo, Backend-repo. -->
                             </p>
                         </div>
                     </li>
@@ -274,7 +276,7 @@
                             <p>Tech Stack & Planning Tools - React, CSS, JavaScript (ES6), Trello.
                                 
                                 </p><p>Team & Project Duration – 4 developers for 1/2 day hackerthon.</p>
-                            <p>GitHub - Frontend-repo, Backend-repo.
+                            <!-- <p>GitHub - Frontend-repo, Backend-repo. -->
                             </p>
                         </div>
                     </li>
@@ -283,15 +285,80 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-center container">
+            <div class="left" data-aos="fade-right" data-aos-duration="2000">
+                <h2>Get in Touch</h2>
+                <p>Thank you so much for visiting my personal portfolio page.  If you would like to find out more, then please feel free to contact me via one of the methods below.  Best wishes, Anna-Marie<span class="heart"> <i class="fas fa-heart"></i></span></p>
+                <div>
+                    <span class="icon"><i class="fas fa-user-circle"></i></span>
+                    <span class="content">
+                        <h3>Name</h3>
+                        <span>Anna-Marie Moss</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <span class="content">
+                        <h3>Address</h3>
+                        <span>Birmingham, UK.</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fas fa-at"></i></span>
+                    <span class="content">
+                        <a class="no-color" href="mailto:ambrown1976@googlemail.com?subject=Website Query&body=Please remember to attach your name, contact details and a brief description of your project. Kind regards, Anna-Marie Moss.">
+                        <h3>Email</h3></a>
+                        <span>ambrown1976@googlemail.com</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span class="content">
+                        <a class="no-color" href="https://github.com/Anna-MarieMoss" target="_blank"><h3>GitHub</h3></a>
+                    </span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                    <span class="content">
+                        <a class="no-color"  href="https://www.linkedin.com/in/anna-marie-moss/" target="_blank"><h3>LinkedIn</h3></a>
+                        
+                    </span>
+                </div>
+            </div>
+
+            <div class="right" data-aos="fade-left" data-aos-duration="2000">
+                <img class="headshot" src="./images/anna_hendricks.jpg" alt="" class="src">
+            </div> 
+
+            <!-- <div class="right" data-aos="fade-left" data-aos-duration="2000">
+                <form class="form">
+                    <h2>Message me</h2>
+                    <div>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                    </div>
+                        <input type="text" placeholder="Subject" />
+                        <textarea cols="30" rows="10" placeholder="Describe Project"></textarea>
+                </form>
+             </div> -->
+        </div>
+    </section>
     </main>
-    <!-- Animate on scroll js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- glidejs jQuery slider -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-    <!-- typeit - A lightweight, easy-to-implement jQuery animated typing plugin that types text for you. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
-    <!-- gsap - javascript web animation tool -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <!-- my javascript page -->
+    <!-- Footer -->
+    <footer>
+        <p>Created by <span>Anna-Marie Moss</span> | Copyright &copy; 
+        <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+         </p>   
+    </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"> </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="./index.js"></script>
 </html>
