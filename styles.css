@@ -524,7 +524,7 @@ a.btn:active {
 }
 /* sets how far along the bar to colour */
 .skills-box .html {
-  width: 85%;
+  width: 75%;
 }
 .skills-box .css {
   width: 50%;
@@ -533,7 +533,7 @@ a.btn:active {
   width: 65%;
 }
 .skills-box .react {
-  width: 70%;
+  width: 65%;
 }
 .skills-box .nodejs {
   width: 65%;
