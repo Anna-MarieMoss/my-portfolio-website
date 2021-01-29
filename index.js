@@ -80,7 +80,7 @@ new TypeIt('#type2', {
   // loop: true,
   waitUntilVisible: true,
 })
-  .type('Designer, Developer and Project Manager', { delay: 400 })
+  .type('Designer, Developer and PM', { delay: 200 })
   // .type('Designer', { delay: 400 })
   // .pause(500)
   // .delete(9)
