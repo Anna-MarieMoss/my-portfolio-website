@@ -76,18 +76,20 @@ new TypeIt('#type1', {
 // animated job roles text for "About me" page
 new TypeIt('#type2', {
   speed: 120,
-  loop: true,
+  loop: false,
+  // loop: true,
   waitUntilVisible: true,
 })
-  .type('Designer', { delay: 400 })
-  .pause(500)
-  .delete(9)
-  .type('Developer', { delay: 400 })
-  .pause(500)
-  .delete(9)
-  .type('Project Mgr', { delay: 400 })
-  .pause(500)
-  .delete(9)
+  .type('Designer, Developer and Project Manager', { delay: 400 })
+  // .type('Designer', { delay: 400 })
+  // .pause(500)
+  // .delete(9)
+  // .type('Developer', { delay: 400 })
+  // .pause(500)
+  // .delete(9)
+  // .type('Project Mgr', { delay: 400 })
+  // .pause(500)
+  // .delete(9)
   .go();
 
 // gsap - javascript web animation on the "Software Developer Title at top of page"
