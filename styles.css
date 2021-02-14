@@ -530,16 +530,19 @@ a.btn:active {
   width: 50%;
 }
 .skills-box .javascript {
-  width: 65%;
+  width: 70%;
 }
 .skills-box .react {
   width: 65%;
 }
 .skills-box .nodejs {
-  width: 65%;
+  width: 60%;
 }
 .skills-box .sql {
-  width: 70%;
+  width: 65%;
+}
+.skills-box .git {
+  width: 75%;
 }
 
 /* positions the ratings at the end of the skills bar */
@@ -607,6 +610,10 @@ a.btn:active {
   object-fit: cover;
 }
 
+.img-cover:hover {
+  transform: scale(1.5);
+}
+
 .portfolio h3 {
   font-size: 1.6rem;
   margin: 1rem;
@@ -615,7 +622,7 @@ a.btn:active {
 
 .portfolio p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: rgb(218, 216, 216);
   width: 90%;
   margin: 0 auto 1rem auto;
 }
@@ -623,6 +630,7 @@ a.btn:active {
 .portfolio:hover {
   border-bottom: 4px solid #fff;
   background-color: #dd9a05;
+  color: #fff;
 }
 
 .portfolio:hover .img-cover {
@@ -661,39 +669,7 @@ a.btn:active {
   color: #dd9a05;
 }
 
-.form h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.form input,
-.form textarea {
-  font-family: 'Poppins', sans-serif;
-  font-style: 1.6rem;
-  padding: 1rem 0;
-  text-indent: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  outline: none;
-}
-
-.form .right div {
-  display: flex;
-}
-
-.form .right div input {
-  flex: 1 1 50%;
-}
-
-.form textarea {
-  max-width: 55.5rem;
-  height: 16rem;
-  margin-bottom: 3rem;
-}
-
-/* changes the page so that the form drops underneath the get in Touch text block */
+/* changes the page so that the img drops underneath the get in Touch text block */
 @media only screen and (max-width: 768px) {
   .contact-center {
     grid-template-columns: 1fr;
